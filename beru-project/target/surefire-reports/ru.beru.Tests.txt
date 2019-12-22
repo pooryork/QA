@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: ru.beru.Tests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 44.006 sec <<< FAILURE! - in ru.beru.Tests
+Authorization(ru.beru.Tests)  Time elapsed: 15.1 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: _1FEpprw_Km (tried for 10 second(s) with 500 milliseconds interval)
+	at ru.beru.Tests.Authorization(Tests.java:38)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0BEB8F3', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\DartTerr\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:20586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9bee847ea3b06a4ac28bd01f86fd28b
+*** Element info: {Using=class name, value=_1FEpprw_Km}
+	at ru.beru.Tests.Authorization(Tests.java:38)
+
+ChangeCity(ru.beru.Tests)  Time elapsed: 14.637 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element found by By.xpath: //span[contains(@data-auto,'region-form-opener')]//span[2] to have text "Саратов". Current text: "null" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0BEB8F3', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\DartTerr\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:20620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2c481c1d97d28bffb85c29f204a982b9
+	at ru.beru.Tests.ChangeCity(Tests.java:47)
+
+SelectToothbrushes(ru.beru.Tests)  Time elapsed: 14.228 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: _1FEpprw_Km (tried for 10 second(s) with 500 milliseconds interval)
+	at ru.beru.Tests.SelectToothbrushes(Tests.java:60)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.79)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0BEB8F3', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\DartTerr\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:20650}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 65d0529200533e31ce828d7df7a96b2e
+*** Element info: {Using=class name, value=_1FEpprw_Km}
+	at ru.beru.Tests.SelectToothbrushes(Tests.java:60)
+
