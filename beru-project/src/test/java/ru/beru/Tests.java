@@ -53,4 +53,30 @@ public class Tests
         generalPage.СheckCityMatches();
         _browser.quit();
     }
+
+    @Test
+    public void SelectToothbrushes()
+    {
+        LoginPage.LoginSelect(_browser);
+        Authorization.Login(_browser, _login, _password);
+        LoginPage.CatalogClick(_browser);
+        SelectCatalog.BeautySectionSelect(_browser);
+        SelectCatalog.ElectricToothbrushesSelect(_browser);
+        ToothbrushesCatalog.ChoseToothbrushPrice(_browser, _lowPrice, _highPrice);
+        ToothbrushesCatalog.CheckPriceRange(_browser, _lowPrice, _highPrice);
+        //ToothbrushesCatalog.ClickShowMore(_browser);
+        ToothbrushesCatalog.SelectLast(_browser);
+        ToothbrushesCatalog.GoToCart(_browser);
+        CartPage cartPage = new CartPage(_browser);
+        cartPage.CheckFreeShipment();
+        cartPage.OpenCheckout();
+        CheckoutPage checkoutPage = new CheckoutPage(_browser);
+        checkoutPage.CheckTotalCostCorrection();
+        checkoutPage.OpenCart();
+        cartPage.IncreaseTotalTo(_finalPrice);
+        cartPage.OpenCheckout();
+        checkoutPage.CheckTotalCostCorrection();
+        _browser.quit();
+    }
+
 }
